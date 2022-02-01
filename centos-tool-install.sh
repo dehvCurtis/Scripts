@@ -9,12 +9,13 @@ sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 
 # Snap Apps
-sudo snap install spotify
 sudo snap install 1password
-sudo snap install gimp
-sudo snap install typora
 sudo snap install brave
+sudo snap install gimp
+sudo snap install pycharm-community --classic
 sudo snap install slack --classic
+sudo snap install spotify
+sudo snap install typora
 
 # Terminator Terminal
 yum install -y terminator
