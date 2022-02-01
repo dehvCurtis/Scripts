@@ -1,5 +1,6 @@
 # OS
 sudo yum update -y
+sudo yum install tree vim git wget curl gcc docker -y
 reboot
 
 # Snap
