@@ -30,3 +30,23 @@ sudo yum install -y yum-utils
  sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
+
+# zsh
+sudo dnf install zsh
+
+# ohmyzsh
+wget sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
+source ~/.zshrc
+
+# ohmyzsh fonts
+git clone https://github.com/ryanoasis/nerd-fonts
+cd nerd-fonts
+sudo ./install.sh
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+sudo fc-cache -v
