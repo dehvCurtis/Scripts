@@ -1,5 +1,9 @@
 # Tools
-sudo dnf install tree vim git wget curl gcc pam_yubico
+sudo dnf install tree vim git wget curl gcc 
+
+# Yubikey
+sudo dnf install pam_yubico -y
+
 
 # Brave Browser
 sudo dnf install dnf-plugins-core
