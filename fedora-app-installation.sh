@@ -9,6 +9,8 @@ sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install spotify
 sudo snap install 1password
 sudo snap install gimp
+sudo snap install typora
+sudo snap install brave
 
 # Yubikey
 sudo dnf install pam_yubico -y
