@@ -32,7 +32,7 @@ sudo yum install -y yum-utils
     https://download.docker.com/linux/centos/docker-ce.repo
 
 # zsh
-sudo dnf install zsh
+sudo yum install zsh
 
 # ohmyzsh
 wget sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
