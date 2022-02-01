@@ -12,6 +12,7 @@ sudo ln -s /var/lib/snapd/snap /snap
 # Snap Apps
 sudo snap install 1password
 sudo snap install brave
+sudo snap install chromium
 sudo snap install code --classic
 sudo snap install gimp
 sudo snap install pycharm-community --classic
