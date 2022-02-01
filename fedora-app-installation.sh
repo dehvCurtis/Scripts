@@ -1,9 +1,17 @@
 # Tools
 sudo dnf install tree vim git wget curl gcc 
 
+# Snap
+sudo dnf install snapd
+sudo ln -s /var/lib/snapd/snap /snap
+
+# Snap Installs
+sudo snap install spotify
+sudo snap install 1password
+sudo snap install gimp
+
 # Yubikey
 sudo dnf install pam_yubico -y
-
 
 # Brave Browser
 sudo dnf install dnf-plugins-core
