@@ -1,7 +1,7 @@
 # OS
 sudo yum update -y
-sudo yum install epel-release -y
-sudo yum install tree vim git wget curl gcc docker -y
+sudo yum install epel-release yum-utils -y
+sudo yum install tree vim git wget curl gcc -y
 reboot
 
 # Snap
@@ -24,12 +24,7 @@ sudo snap install typora
 yum install -y terminator
 
 # Docker
-sudo yum install docker-ce docker-ce-cli containerd.io
-sudo yum install -y yum-utils
 
- sudo yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
 
 # zsh
 sudo yum install zsh
