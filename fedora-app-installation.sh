@@ -11,18 +11,10 @@ sudo snap install 1password
 sudo snap install gimp
 sudo snap install typora
 sudo snap install brave
+sudo snap install docker
 
 # Yubikey
 sudo dnf install pam_yubico -y
-
-# Brave Browser
-sudo dnf install dnf-plugins-core
-sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo dnf install brave-browser
-
-# Docker
-sudo dnf install docker-ce docker-ce-cli containerd.io
 
 # PyCharm
 sudo dnf upgrade --refresh -y
